@@ -1,0 +1,406 @@
+/* ====================================================== */
+/* FLOODTWIN CREAM — FINAL TEXT + HIGHLIGHT FIX           */
+/* ====================================================== */
+
+:root {
+  /* Main cream palette */
+  --background: #f6f0e4;
+  --panel: #fffaf2;
+  --card: #f1e5d2;
+
+  /* Strong readable text */
+  --text-h: #241c14;
+  --text-main: #352a20;
+  --text-secondary: #625548;
+  --text-muted: #81705d;
+
+  /* Strong blue accent */
+  --accent: #145da0;
+  --accent-hover: #0d4c86;
+  --accent-bg: rgba(20, 93, 160, 0.13);
+  --accent-bg-strong: rgba(20, 93, 160, 0.20);
+  --accent-border: rgba(20, 93, 160, 0.55);
+
+  --border: rgba(125, 103, 76, 0.24);
+  --shadow: 0 10px 28px rgba(89, 67, 42, 0.14);
+}
+
+
+/* ====================================================== */
+/* GLOBAL TEXT                                            */
+/* ====================================================== */
+
+body {
+  color: var(--text-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-h);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+
+/* ====================================================== */
+/* FIX OLD DARK-THEME TEXT CLASSES                        */
+/* ====================================================== */
+
+.text-slate-100 {
+  color: #241c14 !important;
+}
+
+.text-slate-200 {
+  color: #30261d !important;
+}
+
+.text-slate-300 {
+  color: #46392d !important;
+}
+
+.text-slate-400 {
+  color: #625548 !important;
+}
+
+.text-slate-500 {
+  color: #786856 !important;
+}
+
+.text-slate-600 {
+  color: #8c7a65 !important;
+}
+
+.text-slate-700 {
+  color: #9d8a72 !important;
+}
+
+
+/* ====================================================== */
+/* FLOODTWIN BLUE ACCENT                                  */
+/* ====================================================== */
+
+.text-\[\#4da3ff\],
+.text-\[\#8cc7ff\],
+.text-\[\#007cf7\] {
+  color: #145da0 !important;
+}
+
+.border-\[\#007cf7\]\/15,
+.border-\[\#007cf7\]\/20,
+.border-\[\#007cf7\]\/25,
+.border-\[\#007cf7\]\/30,
+.border-\[\#007cf7\]\/40 {
+  border-color: rgba(20, 93, 160, 0.42) !important;
+}
+
+.bg-\[\#007cf7\]\/10 {
+  background-color: rgba(20, 93, 160, 0.10) !important;
+}
+
+.bg-\[\#007cf7\]\/15 {
+  background-color: rgba(20, 93, 160, 0.13) !important;
+}
+
+.bg-\[\#007cf7\]\/20 {
+  background-color: rgba(20, 93, 160, 0.16) !important;
+}
+
+.bg-\[\#007cf7\]\/25 {
+  background-color: rgba(20, 93, 160, 0.20) !important;
+}
+
+.bg-\[\#007cf7\]\/30 {
+  background-color: rgba(20, 93, 160, 0.24) !important;
+}
+
+
+/* ====================================================== */
+/* NAVIGATION HIGHLIGHT                                   */
+/* ====================================================== */
+
+/*
+ * Makes the selected sidebar item clearly visible
+ * instead of the pale cyan currently shown.
+ */
+
+nav button,
+aside button {
+  color: #625548;
+}
+
+nav button:hover,
+aside button:hover {
+  color: #145da0;
+  background-color: rgba(20, 93, 160, 0.08);
+}
+
+
+/* Buttons/elements using existing FloodTwin blue classes */
+.border-\[\#007cf7\]\/30.bg-\[\#007cf7\]\/20,
+.border-\[\#007cf7\]\/40.bg-\[\#007cf7\]\/25 {
+  color: #0d4c86 !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(20, 93, 160, 0.18),
+      rgba(20, 93, 160, 0.10)
+    ) !important;
+
+  border-color: rgba(20, 93, 160, 0.55) !important;
+
+  box-shadow:
+    0 4px 14px rgba(20, 93, 160, 0.10);
+}
+
+
+/* ====================================================== */
+/* BUTTONS                                                */
+/* ====================================================== */
+
+button {
+  color: #352a20;
+}
+
+button:hover {
+  color: #145da0;
+}
+
+button:focus-visible {
+  outline: 2px solid #145da0;
+  outline-offset: 2px;
+}
+
+
+/* ====================================================== */
+/* INPUTS                                                 */
+/* ====================================================== */
+
+input,
+select,
+textarea {
+  color: #241c14 !important;
+
+  background: #fffaf2 !important;
+
+  border: 1px solid #d3c1a9 !important;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #ad9577 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #145da0 !important;
+
+  box-shadow:
+    0 0 0 3px rgba(20, 93, 160, 0.12) !important;
+}
+
+
+/* ====================================================== */
+/* OPERATOR INPUT VALUES                                  */
+/* ====================================================== */
+
+input[type="number"] {
+  font-weight: 650;
+  color: #241c14 !important;
+}
+
+
+/* ====================================================== */
+/* GLASS PANELS                                           */
+/* ====================================================== */
+
+.glass-panel {
+  color: #352a20;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 250, 242, 0.98),
+      rgba(246, 236, 220, 0.96)
+    );
+
+  border:
+    1px solid rgba(164, 137, 102, 0.38);
+
+  box-shadow:
+    0 16px 38px rgba(89, 67, 42, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+
+.glass-card {
+  color: #352a20;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fffaf2,
+      #f3e7d5
+    );
+
+  border:
+    1px solid rgba(164, 137, 102, 0.32);
+
+  box-shadow:
+    0 10px 26px rgba(89, 67, 42, 0.08);
+}
+
+
+/* ====================================================== */
+/* LABELS / SMALL TEXT                                    */
+/* ====================================================== */
+
+.uppercase {
+  color: #786856;
+}
+
+
+/* Important blue section labels */
+.text-\[\#4da3ff\].uppercase,
+.text-\[\#8cc7ff\].uppercase {
+  color: #145da0 !important;
+}
+
+
+/* ====================================================== */
+/* KEEP RISK COLORS STRONG                                */
+/* ====================================================== */
+
+/* Severe */
+.text-red-300,
+.text-red-200 {
+  color: #c92b3e !important;
+}
+
+/* High */
+.text-orange-300,
+.text-orange-200 {
+  color: #c56b12 !important;
+}
+
+/* Caution */
+.text-yellow-300,
+.text-amber-300,
+.text-amber-200 {
+  color: #a66b00 !important;
+}
+
+/* Safe / Online */
+.text-emerald-300,
+.text-emerald-200 {
+  color: #087f5b !important;
+}
+
+/* Drainage */
+.text-cyan-300 {
+  color: #087a8c !important;
+}
+
+
+/* ====================================================== */
+/* COUNTER                                                */
+/* ====================================================== */
+
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 7px;
+
+  color: #0d4c86;
+
+  background:
+    rgba(20, 93, 160, 0.12);
+
+  border:
+    2px solid rgba(20, 93, 160, 0.22);
+
+  transition:
+    border-color 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+
+  margin-bottom: 24px;
+}
+
+.counter:hover {
+  color: #083b69;
+
+  background:
+    rgba(20, 93, 160, 0.18);
+
+  border-color:
+    #145da0;
+}
+
+.counter:focus-visible {
+  outline:
+    2px solid #145da0;
+
+  outline-offset:
+    2px;
+}
+
+
+/* ====================================================== */
+/* LINKS                                                  */
+/* ====================================================== */
+
+a {
+  color: #145da0;
+}
+
+a:hover {
+  color: #0d4c86;
+}
+
+
+/* ====================================================== */
+/* DIVIDERS                                               */
+/* ====================================================== */
+
+#next-steps,
+#spacer {
+  border-color: rgba(125, 103, 76, 0.24);
+}
+
+#docs {
+  border-color: rgba(125, 103, 76, 0.24);
+}
+
+
+/* ====================================================== */
+/* SOCIAL / NEXT STEP BUTTONS                             */
+/* ====================================================== */
+
+#next-steps ul a {
+  color: #352a20;
+
+  background:
+    #f2e7d5;
+
+  border:
+    1px solid #ddcbb3;
+}
+
+#next-steps ul a:hover {
+  color: #0d4c86;
+
+  background:
+    #e8dcc9;
+
+  box-shadow:
+    0 6px 18px rgba(89, 67, 42, 0.12);
+}
