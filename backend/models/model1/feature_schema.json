@@ -1,0 +1,81 @@
+{
+  "features": {
+    "rainfall_mm_hr": {
+      "unit": "mm/hour",
+      "range": [
+        0,
+        300
+      ]
+    },
+    "recent_rainfall_mm": {
+      "unit": "mm",
+      "range": [
+        0,
+        600
+      ]
+    },
+    "antecedent_rainfall_mm": {
+      "unit": "mm",
+      "range": [
+        0,
+        1000
+      ]
+    },
+    "elevation_m": {
+      "unit": "m",
+      "range": [
+        -10,
+        100
+      ]
+    },
+    "slope_deg": {
+      "unit": "degrees",
+      "range": [
+        0,
+        45
+      ]
+    },
+    "built_up_percent": {
+      "unit": "%",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "distance_to_nearest_drain_m": {
+      "unit": "m",
+      "range": [
+        0,
+        10000
+      ]
+    },
+    "drain_density_m_per_km2": {
+      "unit": "m/km2",
+      "range": [
+        0,
+        100000
+      ]
+    },
+    "previous_depth_cm": {
+      "unit": "cm",
+      "range": [
+        0,
+        300
+      ]
+    },
+    "forecast_minutes": {
+      "unit": "minutes",
+      "allowed": [
+        30,
+        60,
+        90,
+        180
+      ]
+    }
+  },
+  "target": {
+    "water_depth_cm": {
+      "unit": "cm"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "method": "held_out_event_absolute_error_distribution",
+  "test_samples": 25056,
+  "mean_absolute_error_cm": 1.3698,
+  "median_absolute_error_cm": 1.0448,
+  "p90_absolute_error_cm": 2.6502,
+  "p95_absolute_error_cm": 3.3649,
+  "max_absolute_error_cm": 63.7431,
+  "interpretation": "Held-out simulator-target errors; not a calibrated real-world confidence interval."
+}

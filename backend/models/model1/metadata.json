@@ -1,0 +1,27 @@
+{
+  "model_version": "model1-2026.08-chennai-gis-v2",
+  "created_utc": "2026-08-27T17:49:22.190102+00:00",
+  "selected_model": "RandomForest",
+  "features": [
+    "rainfall_mm_hr",
+    "recent_rainfall_mm",
+    "antecedent_rainfall_mm",
+    "elevation_m",
+    "slope_deg",
+    "built_up_percent",
+    "distance_to_nearest_drain_m",
+    "drain_density_m_per_km2",
+    "previous_depth_cm",
+    "forecast_minutes"
+  ],
+  "target": "water_depth_cm",
+  "forecast_horizons_minutes": [
+    30,
+    60,
+    90,
+    180
+  ],
+  "supports_realtime_inference": true,
+  "training_target_ground_truth": false,
+  "claim_note": "Historical rainfall telemetry and Chennai GIS features are real inputs. Future flood-depth training targets remain simulation-derived because the available GCC inundation-depth observations do not provide a usable time stamp for forecast-horizon matching."
+}

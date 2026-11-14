@@ -1,0 +1,81 @@
+{
+    "model_name": "FloodTwin Model 2 Status Classifier",
+    "model_type": "RandomForestClassifier",
+    "dataset": "C:\\Users\\Padhu\\FloodTwin\\model2_drainage\\data\\processed\\model2_swmm_dataset.csv",
+    "dataset_rows": 80,
+    "feature_count": 7,
+    "feature_names": [
+        "rainfall_mm_hr",
+        "c2_diameter_m",
+        "capacity_percent",
+        "upstream_load_percent",
+        "downstream_load_percent",
+        "nearby_water_depth_cm",
+        "normal_capacity_percent"
+    ],
+    "target": "status",
+    "classes": [
+        "NORMAL",
+        "STRESSED",
+        "OVERLOADED",
+        "PROBABLE_BLOCKAGE"
+    ],
+    "random_state": 42,
+    "test_size": 0.25,
+    "n_estimators": 300,
+    "min_samples_leaf": 1,
+    "test_metrics": {
+        "accuracy": 0.9444444444444444,
+        "macro_precision": 0.9464285714285715,
+        "macro_recall": 0.9474358974358974,
+        "macro_f1": 0.946360153256705,
+        "confusion_matrix": [
+            [
+                13,
+                2,
+                0,
+                0
+            ],
+            [
+                1,
+                12,
+                0,
+                0
+            ],
+            [
+                0,
+                0,
+                12,
+                0
+            ],
+            [
+                0,
+                0,
+                0,
+                14
+            ]
+        ]
+    },
+    "cross_validation": {
+        "folds": 5,
+        "scoring": "f1_macro",
+        "scores": [
+            1.0,
+            0.8426156987295825,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "mean": 0.9685231397459166,
+        "std": 0.06295372050816699
+    },
+    "feature_importance": {
+        "capacity_percent": 0.3441603614836702,
+        "nearby_water_depth_cm": 0.23035099220734143,
+        "c2_diameter_m": 0.16465461506103302,
+        "downstream_load_percent": 0.1001608011016574,
+        "normal_capacity_percent": 0.05919625579077914,
+        "rainfall_mm_hr": 0.0536923314081166,
+        "upstream_load_percent": 0.04778464294740239
+    }
+}
